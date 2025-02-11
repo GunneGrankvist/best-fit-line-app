@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 4%);
+}
+
+svg {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.columns {
+  margin: -0.75rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  display: block;
+  flex-basis: calc(600px + 1.5rem);
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+.axis {
+  font-size: 1rem;
+}
+
+.tick line {
+  stroke: #ccc;
+}
+
+.notification-overlay {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+.notification-message {
+  fill: hsl(348, 100%, 61%);
+}
+
+.best-line,
+#cross-head {
+  stroke: hsl(348, 100%, 61%);
+  stroke-opacity: 0.6;
+}
+
+.data-circle {
+  fill: hsl(204, 86%, 53%);
+  fill-opacity: 0.6;
+}
+
+.offset-line {
+  stroke: hsl(141, 53%, 53%);
+  stroke-opacity: 0.6;
+}
+
+.equation-container {
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.25em 0 0.25em 0.4em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: right;
+  vertical-align: baseline;
+  padding: 0.25em 0.4em;
+  border-bottom: 1px solid #ddd;
+}
+
+th.narrow {
+  width: 48px;
+}
+
+th.wide {
+  width: 72px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

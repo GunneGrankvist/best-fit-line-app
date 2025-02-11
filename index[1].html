@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="stylesheet" href="best-fit-line.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="chart-container"></div>
+        </div>
+        <div class="column">
+          <div>
+            <p>
+              Click the grid to add a point. Click the same location multiple
+              times to add multiple points.
+            </p>
+            <p>Click the delete button in the table to delete a point.</p>
+            <p>Adjust the line equation to adjust the line.</p>
+          </div>
+          <div class="equation-container">
+            y =
+            <input
+              type="number"
+              name="a-value"
+              id="a-value"
+              min="-10"
+              max="10"
+              step="0.01"
+            />
+            +
+            <input
+              type="number"
+              name="b-value"
+              id="b-value"
+              min="-10"
+              max="10"
+              step="0.01"
+            />
+            x
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th class="narrow"></th>
+                  <th class="narrow">x</th>
+                  <th class="narrow">y</th>
+                  <th class="wide">res</th>
+                  <th class="wide">res<sup>2</sup></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="4">Ʃ</th>
+                  <th class="sse-cell">0</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="best-fit-line.js"></script>
+  </body>
+</html>
